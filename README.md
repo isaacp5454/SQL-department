@@ -2,8 +2,7 @@
 
   ## Description
   
-  I set up a server.js, index.js. and notes.js folder and connected them together. So it could render to port 3001. 
-  This assignment motivated me to keep track of my variables. (mapping)
+  I set up a database with schema sql creating a database and seeds. I also created index.js files that create promises so it does the function asynchronously. 
   
   ## Table of Contents 
   
