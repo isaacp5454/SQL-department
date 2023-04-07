@@ -24,20 +24,7 @@ const newEmployeeQuestions = [
     },
 ]
 
-const employeeUpdateQuestions = [
-    {
-        type: 'list',
-        message: "Which employee's role do you want to update?",
-        name: 'employeeUpdate',
-        choices: []
-    },
-    {
-        type: 'list',
-        message: "Which role do you want to assign the selected employee?",
-        name: 'assignedEmployee',
-        choices: []
-    }
-]
+
 const newDepartmentQuestions = [
     {
         type: 'input',
@@ -95,7 +82,7 @@ function menu() {
 }
 function newDepartment() {
     inquirer.prompt(newDepartmentQuestions).then((data) => {
-        sqlHelper.addDepartment(data.departmentnName).then(() => {
+        sqlHelper.addDepartment(data.departmentName).then(() => {
             menu();
         })
     })
